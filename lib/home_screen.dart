@@ -27,13 +27,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text(
-                          userInput.toString(),
-                          style: const TextStyle(
-                            fontSize: 30,
-                            color: Colors.white,
+                        Align(
+                          alignment: Alignment.bottomRight,
+                          child: Text(
+                            userInput.toString(),
+                            style: const TextStyle(
+                              fontSize: 30,
+                              color: Colors.white,
+                            ),
                           ),
+                        ),
+                        const SizedBox(
+                          height: 15,
                         ),
                       ],
                     ),
